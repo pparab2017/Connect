@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/eachMessageRoot"
+    android:background="@drawable/borders_b">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/circle"
+        android:id="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="P"
+            android:textStyle="bold"
+            android:id="@+id/TVInitials"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/abc_hint_foreground_material_dark" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sender"
+        android:id="@+id/textViewSender"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/linearLayout5"
+        android:layout_toRightOf="@+id/linearLayout5"
+        android:layout_toEndOf="@+id/linearLayout5" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Message Text"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/textViewMessageText"
+        android:layout_alignBottom="@+id/linearLayout5"
+        android:layout_alignLeft="@+id/textViewSender"
+        android:layout_alignStart="@+id/textViewSender" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewTime"
+        android:textSize="12dp"
+        android:text="Time"
+        android:layout_alignBottom="@+id/textViewMessageText"
+        android:layout_alignRight="@+id/imageViewDelete"
+        android:layout_alignEnd="@+id/imageViewDelete" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageViewAttach"
+        android:src="@drawable/attach"
+        android:layout_alignTop="@+id/textViewMessageText"
+        android:layout_toLeftOf="@+id/textViewTime"
+        android:layout_toStartOf="@+id/textViewTime" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageViewDelete"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_alignTop="@+id/textViewSender"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

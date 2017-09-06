@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.mad.connect.Welcome">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/container"
+
+        android:layout_alignParentStart="false"
+        android:layout_above="@+id/linearLayout3"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="@drawable/borders"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageViewHome_G"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+           />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/imageViewMessage_G"
+                android:layout_weight="1"
+                android:src="@drawable/message"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:background="@drawable/circle"
+                android:id="@+id/textViewCount"
+                android:layout_marginRight="41dp"
+                android:layout_marginEnd="41dp"
+                android:minWidth="20dp"
+                android:gravity="center"
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:textStyle="bold"
+                android:minHeight="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+
+            android:layout_height="48dp"
+            android:id="@+id/imageViewUser_G"
+            android:layout_weight="1"
+            android:src="@drawable/user" />
+    </LinearLayout>
+</RelativeLayout>

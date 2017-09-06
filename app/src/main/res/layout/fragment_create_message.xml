@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mad.connect.CreateMessage">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="textMultiLine"
+           android:minHeight="100dp"
+           android:ems="10"
+           android:background="@drawable/editline"
+           android:id="@+id/editTextMessageText"
+           android:layout_below="@+id/textView8"
+           android:layout_alignLeft="@+id/textView9"
+           android:layout_alignStart="@+id/textView9"
+           android:padding="15dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="15dp"
+           android:layout_marginBottom="15dp"
+           android:hint="Type you message here..."
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginRight="15dp" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:text="Enter Message:"
+           android:id="@+id/textView8"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginTop="44dp"
+           android:paddingLeft="15dp"
+           android:paddingTop="15dp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:text="Choose Image"
+           android:id="@+id/textView9"
+           android:layout_below="@+id/editTextMessageText"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:paddingLeft="15dp" />
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"></LinearLayout>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:id="@+id/imageViewMessageImage"
+           android:layout_below="@+id/textView9"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+
+           android:src="@drawable/gal"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginTop="15dp"
+           android:maxHeight="100dp" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:text="Message To:"
+android:background="@drawable/header"
+           android:id="@+id/textViewTo"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:padding="15dp" />
+   </RelativeLayout>
+</ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:id="@+id/buttonSendMessage"
+        android:background="@drawable/borders"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_gravity="center_horizontal|bottom" />
+</FrameLayout>

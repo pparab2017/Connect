@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient android:startColor="#99ffffff"  android:endColor="#4465e2f9"></gradient>
+    <!-- view background color -->
+
+
+    <!-- view border color and width -->
+
+
+    <!-- If you want to add some padding -->
+
+<padding android:bottom="2dp" android:left="20dp" android:right="20dp" android:top="2dp"></padding>
+    <!-- Here is the corner radius -->
+    <corners
+        android:radius="2dp"   >
+    </corners>
+
+    <stroke
+
+        android:dashWidth="0px"
+        android:width="1dp"
+        android:color="#441bd4f6"
+        />
+
+</shape>
